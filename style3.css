@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    background-image: url("images/background.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/*navigation*/
+
+#rgt2{
+    width: 50%;
+}
+
+#rgt2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e3e3e3;
+    width: 100%;
+    height:125px;
+    
+}
+
+@media only screen and (max-width: 1180px){
+    nav{
+        height:90px;
+    }
+}
+
+
+nav div#lft{
+    width: 50%;
+    
+   
+}
+
+nav a{
+    
+    
+    padding: 35px;
+    text-decoration: none;
+    color: black;
+    
+    font-family: arial,italic;
+    
+}
+
+.red:hover{
+    color: red;
+}
+
+.blue:hover{
+    color: #27aae2;
+}
+
+.yellow:hover{
+    color: yellow;
+}
+
+.green:hover{
+    color: greenyellow;
+}
+
+.purple:hover{
+    color: purple;
+}
+
+nav div#rgt1{
+    width: 50%;
+    display: flex;  
+    justify-content: space-around;
+}
+
+#mobilenav{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vw;
+    
+}
+
+#mobilenav a{
+    padding: 0;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 1180px){
+    nav{
+        height:90px;
+    }
+
+    #logo1{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1180px){
+    #logo2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1180px){
+    #rgt1{
+        display: none !important;
+    }
+   #mobilenav{
+        display: block;
+    }
+    
+    
+    
+}
+
+@media only screen and (min-width: 1180px){
+    
+    #rgt2, #mobilenav{
+        display: none;
+    }
+    
+}
+/*heading*/
+@media only screen and (min-width: 1180px){
+    .heading h1{
+        font-size: 35pt;
+    } 
+
+    .heading{
+        margin-top: 80px;
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 1180px){
+    .heading h1{
+        font-size: 22pt;
+    } 
+    .heading{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+}
+
+
+.heading{
+    max-width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+/****TEXT****/
+
+.text{
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+.line{
+    width:  50%;
+    margin-left: 80px;
+    margin-top: 20px;
+    color: #bcb50e;
+    border-radius: 2px;
+    border:solid;
+}
+
+p{
+    margin-top: 10px ;
+    margin-left: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 1180px){
+    .text h2{
+        font-size: 18pt;
+    }
+
+    p{
+        font-size: 8pt;
+    }
+}
+
+
+/**image with small text bellow it*/
+.image{
+    padding-top: 50px;
+    width: 70%;
+    margin-left: 80px;
+    margin-right: auto;
+    
+}
+
+.image img{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image p{
+    margin-left: 0;
+}
+
+.article{
+    padding-top: 30px;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+.article a{
+    color: blue;
+}
+
+@media only screen and (max-width: 1180px){
+    .article p{
+        font-size: 12pt;
+        width: 100%;
+    }
+}
+
+
+/*footer*/
+footer{
+    width: 100%;
+    margin-top: 30px;
+    background-color: #e3e3e3;
+    width: 100%;
+    height: 200px;
+    
+    
+}
+
+.bigfooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.bigfooter p{
+    margin-left: 0;
+}
+
+
+@media only screen and (max-width:1180px){
+    .bigfooter{
+        display: none;
+    }
+}
+
+/*some mobile version additions that I noticed later on*/
+
+@media only screen and (max-width:1180px){
+   
+    .text{
+        margin-left: -50px;
+    }
+
+    .heading{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+
+    .line{
+        margin-left: 30px;
+    }
+
+    p{
+        margin-left: 30px;
+    }
+
+    .article p{
+        margin-left: 30px;
+    }
+
+    .image{
+        margin-left: 30px;
+    }
+}

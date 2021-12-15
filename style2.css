@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    background-image: url("images/background.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+/*navigation*/
+#rgt2{
+    width: 50%;
+}
+
+#rgt2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e3e3e3;
+    width: 100%;
+    height:125px;
+    
+}
+
+@media only screen and (max-width: 1180px){
+    nav{
+        height:90px;
+    }
+}
+
+
+nav div#lft{
+    width: 50%;
+    
+   
+}
+
+nav a{
+    
+    
+    padding: 35px;
+    text-decoration: none;
+    color: black;
+    
+    font-family: arial,italic;
+    
+}
+
+.red:hover{
+    color: red;
+}
+
+.blue:hover{
+    color: #27aae2;
+}
+
+.yellow:hover{
+    color: yellow;
+}
+
+.green:hover{
+    color: greenyellow;
+}
+
+.purple:hover{
+    color: purple;
+}
+
+nav div#rgt1{
+    width: 50%;
+    display: flex;  
+    justify-content: space-around;
+}
+
+#mobilenav{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vw;
+    
+}
+
+#mobilenav a{
+    padding: 0;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 1180px){
+    nav{
+        height:90px;
+    }
+
+    #logo1{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1180px){
+    #logo2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1180px){
+    #rgt1{
+        display: none !important;
+    }
+   #mobilenav{
+        display: block;
+    }
+    
+    
+    
+}
+
+@media only screen and (min-width: 1180px){
+    
+    #rgt2, #mobilenav{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1180px){
+    .heading h1{
+        font-size: 35pt;
+    } 
+
+    .heading{
+        margin-top: 80px;
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 1180px){
+    .heading h1{
+        font-size: 22pt;
+    } 
+    .heading{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+}
+
+
+.heading{
+    max-width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+/**************************************** game and icons on a BIG screen**********************************************************/
+@media only screen and (min-width: 1180px){
+
+.second{
+    display: none;
+}
+
+
+.box{
+    
+    margin-left: 30px;
+    margin-top: 40px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.box img{
+    max-width: 100%;
+}
+
+
+.box .left{
+    
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.box .right{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+
+
+
+.button:hover{
+    cursor: pointer;
+    background-color: white;
+    color:#27aae2; 
+    transition-duration: 0.4s;
+}
+
+.icons{
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+}
+
+.icons .txt{
+    padding-top: 4px;
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+    
+    margin: 0 auto; 
+
+    font-size: 25pt;
+    
+}
+
+.icons .icon{
+    width: 10%;
+    margin: 0 auto;
+}
+
+
+.info2{
+    margin-left: 25px;
+    
+}
+
+
+.button{
+    padding: 7px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #27aae2;
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border-radius: 20px;
+    border-width: 4px;
+    border-style: solid;
+    color: white;
+    width: 160px;
+    
+}
+
+
+
+}
+/**********************game and icons ona SMALL screen*********************************/
+@media only screen and (max-width: 1180px){
+    .first{
+        display: none;
+    }
+
+    .box img{
+        max-width: 100%;
+    }
+
+    .box{
+        padding-top: 20px;
+        width: 100%;
+        display: block;
+    }
+
+    .left{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        padding-bottom: 10px;
+
+    }
+
+    .left .second{
+        
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .right{
+        padding-top: 20px;
+        
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .right .txt{
+        font-size: 15pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .right .icons{
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        padding-bottom: 5px;
+        
+    }
+
+    .right .icons .icon{
+        display: flex;
+        width: 35%;
+        justify-content:flex-end;
+    }
+
+    .right .icons .txt{
+        margin-top: 15px;
+        width: 50%;
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+    }
+
+    .button:hover{
+        cursor: pointer;
+        background-color: white;
+        color:#27aae2; 
+        transition-duration: 0.4s;
+    }
+
+
+
+    .info2{
+        padding-top: 20px;
+        display:flex ;
+        justify-content: space-around;
+        align-content: center;
+        
+        
+    }
+    
+    
+    .button{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        margin-top: 10px;
+        padding: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+        background-color: #27aae2;
+        font-size: 17pt;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        border-radius: 20px;
+        border-width: 4px;
+        border-style: solid;
+        color: white;
+        width: 100px;
+        
+    }
+
+    .button a{
+       margin: 0 auto;
+    }
+}
+
+
+/****DESCRIPTION***/
+.description{
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+}
+
+.description h2{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1100px){
+    .description{
+        font-size: 12pt;
+        margin-top: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+
+/*footer*/
+footer{
+    width: 100%;
+    margin-top: 30px;
+    background-color: #e3e3e3;
+    width: 100%;
+    height: 200px;
+    
+    
+}
+
+.bigfooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+@media only screen and (max-width:1180px){
+    .bigfooter{
+        display: none;
+    }
+}
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style4.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<!--navigation bar-->
+
+<nav>
+    <div id="lft">
+    <a id="logo1" href="index.html"><img src="images/logo.png" alt="logo"></a>
+    <a id="logo2" href="index.html"><img src="images/logo2.png" alt="logo"></a>
+    </div>
+
+    <div id="rgt1">
+        <a class="red" href="index.html">HOME</a>
+        <a class="blue" href="#shop">SHOP</a>
+        <a class="yellow" href="#news">NEWS</a>
+        <a class="green" href="#diy">DIY</a>
+        <a class="purple" href="#">ABOUT</a>
+    </div>
+    <div id="rgt2">
+        <a id="burger" href="#mobilenav"><img src="images/burger.png" alt="burger"></a>
+    </div>
+</nav>
+
+<!--heading-->
+<section class="heading">
+    <h1><span style="color: #8dc742;">CUSTOM SPINNING WHEEL</span></h1>
+</section>
+
+<section class="text">
+    <h2><b>If you feel like the game isn't challenging enough, you can create your own custom wheel! Add any sort of challenges and punishments that you want!</b></h2>
+</section>
+<hr class="line">
+
+
+
+<!-- I took this part from a youtube video: https://www.youtube.com/watch?v=uN11hInUfLs&list=LL&index=6&t=1s&ab_channel=GhostCode This was my first time using java script-->
+<section class="box">
+
+    
+    <section class="wheel">
+        
+            <span class="arrow"></span>
+        
+        <!-- SPINNING WHEEL-->
+        <button id="spin">SPIN</button>
+        <div class="container">
+            <div class="one"><img src="images/lefthand.png" alt="lefthand"></div>
+            <div class="two"><img src="images/lefthand.png" alt="lefthand"></div>
+            <div class="three"><img src="images/lefthand.png" alt="lefthand"></div>
+            <div class="four"><img src="images/lefthand.png" alt="lefthand"></div>
+            <div class="five"><img src="images/leftfoot.png" alt="leftfoot"></div>
+            <div class="six"><img src="images/leftfoot.png" alt="leftfoot"></div>
+            <div class="seven"><img src="images/leftfoot.png" alt="leftfoot"></div>
+            <div class="eight"><img src="images/leftfoot.png" alt="leftfoot"></div>
+            <div class="nine"><img src="images/rightfoot.png" alt="rightfoot"></div>
+            <div class="ten"><img src="images/rightfoot.png" alt="rightfoot"></div>
+            <div class="eleven"><img src="images/rightfoot.png" alt="rightfoot"></div>
+            <div class="twelve"><img src="images/rightfoot.png" alt="rightfoot"></div>
+            <div class="thirteen"><img src="images/righthand.png" alt="righthand"></div>
+            <div class="fourteen"><img src="images/righthand.png" alt="righthand"></div>
+            <div class="fifteen"><img src="images/righthand.png" alt="righthand"></div>
+            <div class="sixteen"><img src="images/righthand.png" alt="righthand"></div>
+        </div>
+    </section>
+    
+    <!--green wheel builder-->
+    <section class="builder">
+
+        <section class="title">
+            <img src="images/BUILDER.png" alt="builder">
+            <h2>Wheel Builder</h2>
+        </section>
+
+        <section class="part2">
+            <section class="choices">
+                <p>Choices (4 for every category):</p>
+            </section>
+
+            <section class="input">
+                <input type="text" placeholder="LEFT ARM">
+                <input type="text" placeholder="RIGHT ARM">
+                <input type="text" placeholder="LEFT FOOT">
+                <input type="text" placeholder="RIGHT FOOT">
+            </section>
+
+            <section class="buttonn">
+                <a class="button">APPLY WHEEL CHANGES</a>
+            </section>
+
+        </section>
+    </section>
+
+</section>
+<script src="style4.js"></script>
+
+<footer>
+    <!--The footer will only appear on regular screens, on smaller screens it will be the navigation bar like we did in one class-->
+    <section class="bigfooter">
+        <img src="images/hasbro.png" alt="hasbro">
+        <section class="middle">
+            <p>FIND US ON SOCIAL MEDIA</p>
+            <img src="images/social.png" alt="socialmedia">
+        </section>
+        <p>Contact mail: <br> twisterhasbro@gmail.com</p>
+    </section>
+    
+
+    <nav id="mobilenav">
+        <a class="red" href="index.html">HOME</a>
+        <a class="blue" href="#shop">SHOP</a>
+        <a class="yellow" href="#newss">NEWS</a>
+        <a class="green" href="#diy">DIY</a>
+        <a class="purple" href="#">ABOUT</a>
+    </nav>
+    
+</footer>
+</body>
